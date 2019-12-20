@@ -1,0 +1,15 @@
+#include<iostream>
+int main()
+{
+	using namespace std;
+	double *pt = new double[3];
+	pt[0] = 0.2;
+	*(pt + 1) = 0.5;
+	pt[2] = 0.8;
+	cout << "pt[1] = " << pt[1] << ".\n";
+	pt = pt + 1;
+	cout << "now pt[0] is " << pt[0] << ", and ";
+	cout << "pt[1] is " << pt[1] << endl;
+	cin.get();
+	return 0;
+}
